@@ -4,7 +4,7 @@
 # It creates a Pub/Sub topic, a GCP Monitoring notification channel pointing to that topic, and the required IAM binding so GCP Monitoring can publish alert messages to the topic.
 # -----------------------------------------------------------------------------
 module "pubsub_topic" {
-  source = "../.."
+  source = "git::https://github.com/nurdsoft/terraform-google-pubsub-topic.git?ref=v0.1.0"
 
   project_id                        = var.project_id
   topic_name                        = var.topic_name
