@@ -1,0 +1,5 @@
+project_id                        = "your-project-id"
+topic_name                        = "monitoring-alerts"
+message_retention_duration        = "86400s"
+notification_channel_display_name = "Monitoring Alerts Pub/Sub Channel"
+monitoring_publisher_role         = "roles/pubsub.publisher"
